@@ -1,6 +1,11 @@
 {
    "name": "stodev/silex-skeleton-app",
    "description": "Esqueleto para aplicativos usando Silex e Twig",
+     "keywords": [
+        "framework",
+        "silex",
+        "twig"
+    ],
    "authors": [
       {
          "name": "Geverson R. Sarmento",
