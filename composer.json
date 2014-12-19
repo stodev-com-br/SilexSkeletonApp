@@ -1,5 +1,5 @@
 {
-   "name": "stodev/SilexSkeletonApp",
+   "name": "stodev/silex-skeleton-app",
    "description": "Esqueleto para aplicativos usando Silex e Twig",
    "authors": [
       {
