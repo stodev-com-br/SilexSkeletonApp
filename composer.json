@@ -1,0 +1,14 @@
+{
+   "name": "stodev/SilexSkeletonApp",
+   "description": "Esqueleto para aplicativos usando Silex e Twig",
+   "authors": [
+      {
+         "name": "Geverson R. Sarmento",
+         "email": "geverson.sarmento@stodev.com.br"
+      }
+   ],
+   "require": {
+      "silex/silex": "*",
+      "twig/twig": "*"
+   }
+}

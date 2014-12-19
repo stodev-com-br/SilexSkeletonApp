@@ -1,0 +1,12 @@
+SetEnv APPLICATION_ENV development
+
+RewriteEngine On
+# A regra a seguir diz Apache que, se o nome do arquivo solicitado Existe, simplesmente servi-lo.
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+# Demais requisiçõs serão redirecionadas para o index
+RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+RewriteRule ^(.*) - [E=BASE:%1]
+RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]
